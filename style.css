@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+:root{
+    --blue: #4769ff;
+    --dark-blue: #2b41a1;
+    --grey: #ffffff75;
+    --standard-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.text{
+    color: white;
+    font-family: var(--standard-font);
+    font-weight: bolder;
+}
+
+.theme{
+    color: var(--blue);   
+}
+
+.glow{
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.425));
+}
+
+.glow.theme{
+    filter: drop-shadow(0px 0px 10px #0002917a);
+}
+
+.icon{
+    color: var(--grey);
+    scale: 1.7;
+    margin: 0px 15px;
+    transition: .5s;
+}
+
+.icon.theme{
+    color: var(--dark-blue);
+}
+
+.icon:hover{
+    color: white;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.icon.theme:hover{
+    color: var(--blue);
+}
+
+.description, .description2{
+    position: absolute;
+    top: -1%;
+    transition: .5s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    user-select: none;
+}
+
+header{
+    width: 100vw;
+}
+
+#Info{
+    position: relative;
+    display: block;
+    width: 700px;
+    margin: -40px auto 21px auto;
+}
+
+#pfp{
+    display: block;
+    margin: 0 auto;
+    scale: .65;
+    border-radius: 50%;
+    border: 10px solid white; 
+}
+
+#pfp.theme{
+    border: 10px solid var(--blue);
+}
+
+#pfp:hover{
+    animation: glow 2s infinite;
+}
+
+#pfp.theme:hover{
+    animation: glow2 2s infinite;
+}
+
+@keyframes glow{
+    0%, 100%{
+        filter: drop-shadow(0px 0px 0px white);
+    }
+    50%{
+        filter: drop-shadow(0px 0px 25px white);
+    }
+}
+
+@keyframes glow2{
+    0%, 100%{
+        filter: drop-shadow(0px 0px 0px var(--blue));
+    }
+    50%{
+        filter: drop-shadow(0px 0px 25px var(--blue));
+    }
+}
+
+#name{
+    text-align: center;
+    font-size: 32px;
+    margin-top: -64px;
+    text-shadow: 2px 2px 1px var(--grey);
+}
+
+#name.theme{
+    text-shadow: 2px 2px 1px var(--dark-blue);
+}
+
+#contact{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+a{
+    color: var(--grey);
+    text-decoration: none;
+}
+
+a.theme{
+    color: var(--dark-blue);
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline
+}
+
+a.theme:hover{
+    color: var(--blue);
+}
+
+nav{
+    width: 300px;
+    height: 25px;
+    margin-top: 65px;
+    margin: 0px auto
+}
+
+#nav1.theme{
+    display: none;
+}
+
+#nav2{
+    width: 125px;
+}
+
+#nav2.theme{
+    display: none;
+}
+
+#nav-objective-text{
+    left: 0%;
+}
+
+#nav-graduation-text{
+    left: 17%;
+}
+
+#nav-experience-text{
+    left: 30%;
+}
+
+#nav-skill-text{
+    left: 49%;
+}
+
+#nav-personal-text{
+    text-align: center;
+    left: 55%;
+}
+
+#nav-languages-text{
+    left: 24%;
+}
+
+#nav-projects-text{
+    left: 45%;
+}
+
+#nav-objective-text.hide, #nav-graduation-text.hide, #nav-experience-text.hide, #nav-skill-text.hide, #nav-personal-text.hide, #nav-languages-text.hide, #nav-projects-text.hide{
+    opacity: 0%;
+}
+
+#description, #description2{
+    position: relative;
+    margin: 0px auto;
+    width: 320px;
+    height: 25px;
+}
+
+#description2{
+    margin-top: -25px;
+}
+
+#description p{
+    display: inline-block;
+}
+
+main{
+    position: relative;
+    margin: 0 auto;
+    width: 900px;
+    height: 490px;
+    overflow: hidden;
+}
+
+main div{
+    background-color: rgba(255, 255, 255, 0.103);
+    border-radius: 10px;
+    height: 100%;
+    width: 900px;
+    height: 88%;
+}
+
+main h2{
+    margin-left: 2%;
+    padding: 1%;
+}
+
+main p{
+    color: white;
+    font-family: var(--standard-font);
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 20px 0px 10px;
+    text-align: justify;
+    line-height: 2;
+    text-indent: 5%;
+}
+
+section{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+section p{
+    display: inline-block;
+    font-size: 24px;
+}
+
+p.active{
+    text-decoration: underline;
+}
+
+p:hover{
+    cursor: pointer;
+}
+
+hr{
+    margin: 5px 0px;
+}
+
+ul{
+    position: relative;
+    height: 100px;
+}
+
+ul p{
+    padding-top: 25px;
+}
+
+#graduation img, #projects img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0%;
+    right: 0%;
+    border-radius: 10px;
+}
+
+#skill  ul p{
+    padding-top: 5px;
+}
+
+#personal ul p{
+    font-size: 17px;
+}
+
+#objectives, #graduation, #experience, #skill, #personal, #languages, #projects{
+    position: absolute;
+    transition: .5s;
+    opacity: 100%;
+}
+
+#objectives.hide, #graduation.hide, #experience.hide, #skill.hide, #personal.hide, #languages.hide, #projects.hide{
+    opacity: 0%;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link id="favicon" rel="shortcut icon" href="Images/NormalFavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>  
+    <header>
+        <div id="Info">
+            <img src="Images/ProfilePicture.png" alt="Profile Picture" id="pfp">
+            <p id="name" class="text">Bruno Soares dos Santos</p>
+            <p id="contact" class="text">E-mail: Bruuhsoares.santos@outlook.com | <a href="https://www.linkedin.com/in/bruno-soares-100498412/" target="_blank" rel="nofollow">LinkedIn</a></p>
+        </div>
+        <nav id="nav1">
+            <i class="fa-solid fa-bullseye icon" id="objectiveIcon" onmouseenter="show(this)" onmouseleave="hide(this)" onclick="openPage('objectives')"></i>
+            <i class="fa-solid fa-school icon" id="graduationIcon" onmouseenter="show(this)" onmouseleave="hide(this)" onclick="openPage('graduation')"></i>
+            <i class="fa-solid fa-compass icon" id="experienceIcon" onmouseenter="show(this)" onmouseleave="hide(this)" onclick="openPage('experience')"></i>
+            <i class="fa-solid fa-gears icon" id="skillIcon" onmouseenter="show(this)" onmouseleave="hide(this)" onclick="openPage('skill')"></i>
+            <i class="fa-solid fa-user-gear icon" id="personalIcon" onmouseenter="show(this)" onmouseleave="hide(this)" onclick="openPage('personal')"></i>
+        </nav>
+        <nav id="nav2" class="theme">
+            <i class="fa-solid fa-code icon theme" id="languagesIcon" onmouseenter="show(this)" onmouseleave="hide(this)" onclick="openPage('languages')"></i>
+            <i class="fa-solid fa-flag icon theme" id="projectsIcon" onmouseenter="show(this)" onmouseleave="hide(this)" onclick="openPage('projects')"></i>
+        </nav>
+        <div id="description">
+            <p id="nav-objective-text" class="text description hide">Objetivo</p>
+            <p id="nav-graduation-text" class="text description hide">Formação</p>
+            <p id="nav-experience-text" class="text description hide">Experiência</p>
+            <p id="nav-skill-text" class="text description hide">Habilidades</p>
+            <p id="nav-personal-text" class="text description hide">Habilidades Interpessoais</p>
+        </div>
+        <div id="description2">
+            <p id="nav-languages-text" class="text description hide">Linguagens</p>
+            <p id="nav-projects-text" class="text description hide">Projetos</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <p class="text glow active" id="geral" onclick="changePage('first')">Geral</p>
+            <p class="text glow" id="tech" onclick="changePage('second')">Tecnologia</p>
+        </section>
+        <div id="objectives" class="section">
+            <h2 class="text glow">Objetivos <i class="fa-solid fa-bullseye"></i></h2>
+            <hr>
+            <p class="glow">Estou em busca de expandir e adquirir novos conhecimentos e experiências, a fim de contribuir com o ambiente de trabalho e criar uma relação de colaboração mútua e crescimento profissional.</p>
+        </div>
+        <div id="graduation" class="section hide">
+            <h2 class="text glow">Formação <i class="fa-solid fa-school"></i></h2>
+            <hr>
+            <ul>
+                <p class="glow"><i class="fa-solid fa-book"></i> | Técnico em Administração - SEDUC | 2024-2026</p>
+                <a href="https://sed.educacao.sp.gov.br/" target="_blank" rel="nofollow"><img src="Images/Graduation/Seduc.jpg" alt="SEDUC"></a>
+            </ul>
+            <ul>
+                <p class="glow"><i class="fa-solid fa-book"></i> | Engenharia de Software – Unicesumar (Cursando) | 2026-2030</p>
+                <a href="https://www.unicesumar.edu.br/" target="_blank" rel="nofollow"><img src="Images/Graduation/Unicesumar.png" alt="Unicesumar"></a>
+            </ul>
+        </div>
+        <div id="experience" class="section hide">
+            <h2 class="text glow">Experiência <i class="fa-solid fa-compass"></i></h2>
+            <hr>
+            <ul>
+                <p class="glow">Loja Chic Bela (Atendente Vendedor) | 10/06/2022 - 10/03/2026</p>
+                <p class="glow">Procuradoria Municipal de Paranapanema (Estágio) | 02/12/2024 - 02/12/2025</p>
+            </ul>
+        </div>
+        <div id="skill" class="section hide">
+            <h2 class="text glow">Habilidades <i class="fa-solid fa-gears "></i></h2>
+            <hr>
+            <ul>
+                <p class="glow">Conhecimentos avançado em tecnologia e sistemas computacionais.</p>
+                <p class="glow">Domínio do Pacote Office (Word, Excel e PowerPoint)</p>
+                <p class="glow">Habilidade no uso de 1Doc</p>
+                <br>
+                <h2 class="text glow">Idiomas <i class="fa-solid fa-language"></i></h2>
+                <p class="glow">Português (Nativo)</p>
+                <p class="glow">Inglês (Fluente)</p>
+            </ul>
+        </div>
+        <div id="personal" class="section hide">
+            <h2 class="text glow">Habilidades Interpessoais <i class="fa-solid fa-user-gear"></i></h2>
+            <hr>
+            <ul>
+                <p class="glow">Responsabilidade: Comprometimento em cumprir obrigações e assumir responsabilidades.</p>
+                <p class="glow">Inteligência: Capacidade de compreender conceitos complexos e resolver problemas de forma eficaz.</p>
+                <p class="glow">Pontualidade: Comprometimento em chegar no horário estabelecido.</p>
+                <p class="glow">Disciplina: Capacidade de manter-se focado e seguir rotinas e procedimentos estabelecidos.</p>
+                <p class="glow">Criatividade: Capacidade de pensar de forma inovadora e encontrar soluções criativas.</p>
+            </ul>
+        </div>
+        <div id="languages" class="section theme hide">
+            <h2 class="text glow">Linguagens <i class="fa-solid fa-code theme"></i></h2>
+            <hr>
+            <ul>
+                <p class="text glow"><i class="fa-brands fa-html5"></i> HTML | Intermediário </p>
+                <p class="text glow"><i class="fa-brands fa-css3-alt"></i> CSS | Intermediário</p>
+                <p class="text glow"><i class="fa-brands fa-js"></i> JavaScript | Intermediário</p>
+            </ul>
+        </div>
+        <div id="projects" class="section theme hide">
+            <h2 class="text glow">Projetos <i class="fa-solid fa-flag theme"></i></h2>
+            <hr>
+            <ul>
+                <p class="text glow">Pokédex</p>
+                <a href="https://soares-b.github.io/Pok-dex/" target="_blank" rel="nofollow"><img src="Images/Projects/Pokédex.png" alt="Pokédex"></a>
+            </ul>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/0c24622cda.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
