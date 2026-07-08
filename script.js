@@ -69,9 +69,12 @@ function changePage(which){
     const navigationTech = document.querySelector('#nav2')
     const pfp = document.querySelector('#pfp')
     const contact = document.querySelector('#contact')
+    const video = document.querySelector('video')
+    const line = document.querySelectorAll('hr')
 
     if (which === 'first'){
         techno = false
+        video.src = "Videos/plexus white.mp4"
         tech.classList.remove('active')
         geral.classList.add('active')
 
@@ -81,12 +84,18 @@ function changePage(which){
         textColor.forEach(element =>{
             element.classList.remove('theme')
         })
+        line.forEach(element =>{
+            element.classList.remove('theme')
+        })
 
         let a = document.createElement('a')
+        let i = document.createElement('i')
         a.href = "https://www.linkedin.com/in/bruno-soares-100498412/";
         a.target = "_blank"
         a.rel = "nofollow"
         a.textContent = "LinkedIn";
+        i.classList = "fa-brands fa-linkedin"
+        a.append(i)
 
         contact.textContent = "E-mail: Bruuhsoares.santos@outlook.com | "
         contact.append(a);
@@ -98,6 +107,7 @@ function changePage(which){
         favicon.href = "Images/NormalFavicon.ico"
     }else if (which === 'second'){
         techno = true
+        video.src = "Videos/plexus blue.mp4"
         geral.classList.remove('active')
         tech.classList.add('active')
 
@@ -107,20 +117,29 @@ function changePage(which){
         textColor.forEach(element =>{
             element.classList.add('theme')
         })
+        line.forEach(element =>{
+            element.classList.add('theme')
+        })
 
         let a = document.createElement('a')
+        let i = document.createElement('i')
         let a2 = document.createElement('a')
+        let i2 = document.createElement('i')
         a.href = "https://www.linkedin.com/in/bruno-soares-100498412/";
         a.textContent = "LinkedIn";
         a.classList.add('theme')
         a.target = "_blank"
         a.rel = "nofollow"
+        i.classList = "fa-brands fa-linkedin"
+        a.append(i)
 
         a2.href = "https://github.com/Soares-B";
         a2.textContent = "GitHub";
         a2.classList.add('theme')
         a2.target = "_blank"
         a2.rel = "nofollow"
+        i2.classList = "fa-brands fa-github"
+        a2.append(i2)
 
         contact.textContent = "E-mail: Bruuhsoares.santos@outlook.com | "
         contact.append(a, " | ", a2);
